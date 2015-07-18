@@ -1,12 +1,82 @@
+<!DOCTYPE html>
 <html>
-	
-	<head>
-		<meta charset="UTF-8" />
-		<title>AlhnGzl</title>
-	</head>
-	
-	<body style='background-image: url("img/bg.png"); color: white; font-size: 190%;'>
-	<center>Ali Han GÜZEL<br/>
+<head>
+	<meta charset="utf-8" />
+	<title>Alhn Gzl</title>
+	<link rel="shortcut icon" href="img/fav.png" />
 
-	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+	<div class="area" id="gmail_a">
+		<div class="explorer" id="gmail">
+			Gmail
+		</div>
+		<a href="mailto:alhn.gzl@gmail.com">alhn.gzl@gmail.com </a>
+	</div>
+
+	<div class="area" id="linkedin_a">
+		<div class="explorer" id="linkedin">
+			Linked.in
+		</div>
+		<a href="https://tr.linkedin.com/pub/ali-han-güzel/b4/277/72">http://tr.linkedin.com/alhngzl </a>
+	</div>
+
+
+</body>
 </html>
+
+<style type="text/css">
+	body,html{
+		background-image: url("img/bg.png");
+	}
+
+	.area{
+		background-color: green;
+		border-radius: 25px;
+		color: white;
+		font-size: 20px;
+		height: 50px;
+		line-height: 47px;
+		margin: auto;
+		margin-top: 180px;
+		width: 250px;
+		text-align: center;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.explorer{
+		background-color: black;
+		border-radius: 25px;
+		height: 50px;
+		width: 250px;
+	}
+
+	.area > a{
+		color: white;
+		font-size: 20px;
+		text-transform: none;
+		text-decoration: none;
+	}
+
+	#gmail, #linkedin{
+		float: left;
+	}
+
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$("#gmail").click(function(){
+			$("#gmail_a").animate({width: "800px"},500)
+		});
+		$("#linkedin").click(function(){
+			$("#linkedin_a").animate({width: "800px"},500)
+		})
+
+	})
+
+</script>
