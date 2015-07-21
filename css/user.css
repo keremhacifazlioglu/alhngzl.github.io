@@ -1,0 +1,44 @@
+body,html{
+	background-image: url("../img/bg.png");
+}
+.area{
+	background-color: green;
+	border-radius: 25px;
+	color: white;
+	font-size: 20px;
+	height: 50px;
+	line-height: 47px;
+	margin: auto;
+	margin-top: 180px;
+	width: 250px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.explorer{
+	background-color: black;
+	border-radius: 25px;
+	height: 50px;
+	width: 250px;
+}
+.area > a{
+	color: white;
+	font-size: 20px;
+	text-transform: none;
+	text-decoration: none;
+}
+
+#gmail, #linkedin, #sites{
+	float: left;
+}
+
+#gmail_a{
+	margin-top: 50px;
+}
+#play, #design, #gist{
+	float: left;
+}
+
+#play_a{
+	margin-top: 50px;
+}
