@@ -28,13 +28,6 @@
 	width: 33.33%;
 	height: 100px;
 }
-.index > .content > .submit {
-	font-weight: bold;
-	font-size: 25px;
-	height: 50px;
-	margin-top: 10px;
-	width: 100%;
-}
 .index > .content > .final > #final_table{
 	width: 100%;
 }
@@ -48,9 +41,10 @@
 	width: 50%;
 }
 
-.index > .submit {
+.index > .content > .submit {
 	float: left;
+	width: 100%;
 }
-.index > .submit > .submit_button {
+.index > .content > .submit > .submit_button {
 	width: 100%;
 }
