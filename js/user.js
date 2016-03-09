@@ -17,4 +17,7 @@ $(document).ready(function() {
 	$("#sites").click(function(){
 		$("#sites_a").animate({width: "800px"},500)
 	});
+	$("#dgs").click(function(){
+		$("#dgs_a").animate({width: "800px"},500)
+	});
 })
