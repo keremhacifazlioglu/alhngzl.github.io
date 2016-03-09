@@ -1,0 +1,56 @@
+.index > .content {
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	padding: 2%;
+	width: 90%;
+}
+
+.index > .content > .list {
+	border: solid 2px;
+	float: left;
+    height: auto;
+    min-height: 117px;
+	margin: auto;
+	width: 33.33%;
+	padding: 2%;
+}
+
+.index > .content > .final {
+	width: 66.66%;
+	border: solid 2px;
+	padding: 2%;
+	margin-top: 10px;
+	float: left;
+	min-height: 100px;
+}
+.index > .content > #final_button{
+	width: 33.33%;
+	height: 100px;
+}
+.index > .content > .submit {
+	font-weight: bold;
+	font-size: 25px;
+	height: 50px;
+	margin-top: 10px;
+	width: 100%;
+}
+.index > .content > .final > #final_table{
+	width: 100%;
+}
+.index > .content > .final > #final_table > tbody > tr {
+	border-bottom: solid 2px;
+	height: 20px;
+	width: 100%;
+}
+
+.index > .content > .final > #final_table > tbody > tr > td {
+	width: 50%;
+}
+
+.index > .submit {
+	float: left;
+}
+.index > .submit > .submit_button {
+	width: 100%;
+}
