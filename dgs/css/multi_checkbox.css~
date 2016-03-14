@@ -51,7 +51,7 @@ a {
   padding: 2px 15px 2px 5px;
   position: absolute;
   top: 2px;
-  width: 100%;
+  width: 280px;
   list-style: none;
   height: 160px;
   overflow: auto;
