@@ -25,23 +25,26 @@ $(document).ready(function(){
 	});
 
 	$(".delete_button").click(function(){
-		var selected_box = $("input:checkbox:checked");
-		$.each(selected_box,function(index, value){
-			var move_div_class = "." + $(value).attr("value");
-			if ($(value).attr("position").indexOf("f_left") != -1){
-				$(value).attr("position","left");
-				$(value).prop("checked", false);
-				$(move_div_class).appendTo("#list_left .mutliSelect ul");
-			}else if ($(value).attr("position").indexOf("f_right") != -1){
-				$(value).attr("position","right");
-				$(value).prop("checked", false);
-				$(move_div_class).appendTo("#list_right .mutliSelect ul");
-			}
-		});
-		delete_empty_row();
-		height_equals("#final_result","#final_button");
+		if (remove_rules()){
+			var selected_box = $("input:checkbox:checked");
+			$.each(selected_box,function(index, value){
+				var move_div_class = "." + $(value).attr("value");
+				if ($(value).attr("position").indexOf("f_left") != -1){
+					$(value).attr("position","left");
+					$(value).prop("checked", false);
+					$(move_div_class).appendTo("#list_left .mutliSelect ul");
+				}else if ($(value).attr("position").indexOf("f_right") != -1){
+					$(value).attr("position","right");
+					$(value).prop("checked", false);
+					$(move_div_class).appendTo("#list_right .mutliSelect ul");
+				}
+			});
+			delete_empty_row();
+			height_equals("#final_result","#final_button");
+		}else{
+			alert("Sutundaki bütün veriler silinemez...")
+		}
 	})
-
 })
 
 
@@ -73,5 +76,29 @@ var checkbox_rules = function(){
 		return true;
 	}else{
 		alert("Bir şey ters gitti...");
+	}
+}
+
+var remove_rules = function(){
+	var result = [];
+	$.each($("#final_table tr"),function(index, value){
+		var final_left_checkboxs = $(value).find($("input[position*='f_left']")).size();
+		var final_right_checkboxs = $(value).find($("input[position*='f_right']")).size();
+
+		var final_left_checked_checkbox = $(value).find($("input[position*='f_left']:checked")).size();
+		var final_right_checked_checkbox = $(value).find($("input[position*='f_right']:checked")).size();
+
+		if((final_left_checkboxs == final_left_checked_checkbox) && (final_right_checkboxs != final_right_checked_checkbox)){
+			result.push("0");
+		}else if ((final_left_checkboxs != final_left_checked_checkbox) && (final_right_checkboxs == final_right_checked_checkbox)){
+			result.push("0");
+		}else{
+			result.push("1");
+		}
+	});
+	if(result.indexOf("0") != -1){
+		return false;
+	}else{
+		return true;
 	}
 }
