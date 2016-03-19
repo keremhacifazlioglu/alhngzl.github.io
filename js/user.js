@@ -27,10 +27,10 @@ $(document).ready(function() {
 	$("#gist").click(function(){
 		if (gist_durum == 0){
 			$("#gist_a").animate({width: "800px"},500);
-			gist_durum == 1;
+			gist_durum = 1;
 		}else if (gist_durum == 1){
 			$("#gist_a").animate({width: "250px"},500);
-			gist_durum == 0;
+			gist_durum = 0;
 		}
 	});
 	$("#gmail").click(function(){
