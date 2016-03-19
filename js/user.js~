@@ -1,0 +1,30 @@
+$(document).ready(function() {
+var play_durum = 0;
+var design_durum = 0;
+var gist_durum = 0;
+var gmail_durum = 0;
+var linkedin_durum = 0;
+var sites_durum = 0;
+var dgs_durum = 0;
+	$("#play").click(function(){
+		$("#play_a").animate({width: "800px"},500)
+	});
+	$("#design").click(function(){
+		$("#design_a").animate({width: "800px"},500)
+	});
+	$("#gist").click(function(){
+		$("#gist_a").animate({width: "800px"},500)
+	});
+	$("#gmail").click(function(){
+		$("#gmail_a").animate({width: "800px"},500)
+	});
+	$("#linkedin").click(function(){
+		$("#linkedin_a").animate({width: "800px"},500)
+	});
+	$("#sites").click(function(){
+		$("#sites_a").animate({width: "800px"},500)
+	});
+	$("#dgs").click(function(){
+		$("#dgs_a").animate({width: "800px"},500)
+	});
+})

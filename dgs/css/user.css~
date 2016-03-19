@@ -1,5 +1,4 @@
 body {
-	font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
 	color: #fff;
 	padding: 50px;
 	margin: 0 auto;
@@ -9,55 +8,65 @@ body {
 	background-attachment:fixed;
 }
 
-.index > .content {
+.glyphicon{
+	font-size: 10px;
+}
+
+.index > .panel:background{
+	opacity: 0.5;
+}
+
+.index > .panel > .panel-body > .content {
 	height: auto;
 	margin: auto;
 	margin-top: 10px;
-	padding: 2%;
 	width: 90%;
 }
 
-.index > .content > .list {
-	background-color: #374954;
+.index > .panel > .panel-body > .content > .list {
+	background-color: transparent;
 	border: solid 2px;
 	float: left;
 	height: auto;
-	min-height: 117px;
+	/*min-height: 117px;*/
 	margin: auto;
 	width: 33.33%;
 	padding: 2%;
 }
-
-.index > .content > .final {
-	background-color: #374954;
+.index > .panel > .panel-body > .content > .final {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	color: #000;
 	width: 66.66%;
-	border: solid 2px;
 	padding: 2%;
 	margin-top: 10px;
 	float: left;
 	min-height: 100px;
 }
-.index > .content > #final_button{
+.index > .panel > .panel-body > .content > #final_button{
 	width: 33.33%;
 	height: 100px;
+	border: none;
 }
-.index > .content > .final > #final_table{
+.index > .panel > .panel-body > .content > .final > #final_table{
 	width: 100%;
 }
-.index > .content > .final > #final_table > tbody > tr {
+.index > .panel > .panel-body > .content > .final > #final_table > tbody > tr {
 	border-bottom: solid 2px;
 	height: 20px;
 	width: 100%;
 }
 
-.index > .content > .final > #final_table > tbody > tr > td {
+.index > .panel > .panel-body > .content > .final > #final_table > tbody > tr > td {
 	width: 50%;
 }
 
-.index > .content > .submit {
+.index > .panel > .panel-body > .content > .submit {
 	float: left;
 	width: 100%;
 }
-.index > .content > .submit > .submit_button {
+.index > .panel > .panel-body > .content > .submit > .submit_button {
 	width: 100%;
 }

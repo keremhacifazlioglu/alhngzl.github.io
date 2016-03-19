@@ -12,6 +12,10 @@ body {
 	font-size: 10px;
 }
 
+.index > .panel:background{
+	opacity: 0.5;
+}
+
 .index > .panel > .panel-body > .content {
 	height: auto;
 	margin: auto;
