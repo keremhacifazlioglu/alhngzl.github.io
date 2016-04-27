@@ -8,7 +8,7 @@ $(document).ready(function(){
 			line_number++;
 			var selected_box = $("input:checkbox:checked");
 			$.each(selected_box,function(index, value){
-				var move_div_class = "." + $(value).attr("value");
+				var move_div_class = "." + $(value).attr("member");
 				if ($(value).attr("position") == "left"){
 					$(value).attr("position",line_number + "_f_left");
 					$(value).prop("checked", false);
@@ -28,7 +28,7 @@ $(document).ready(function(){
 		if (remove_rules()){
 			var selected_box = $("input:checkbox:checked");
 			$.each(selected_box,function(index, value){
-				var move_div_class = "." + $(value).attr("value");
+				var move_div_class = "." + $(value).attr("member");
 				if ($(value).attr("position").indexOf("f_left") != -1){
 					$(value).attr("position","left");
 					$(value).prop("checked", false);
