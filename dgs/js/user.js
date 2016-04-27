@@ -12,10 +12,12 @@ $(document).ready(function(){
 				if ($(value).attr("position") == "left"){
 					$(value).attr("position",line_number + "_f_left");
 					$(value).prop("checked", false);
+					$(value).attr("name","will_get");
 					$(move_div_class).appendTo("#final_table tbody tr:last td:first-child");
 				}else if($(value).attr("position") == "right"){
 					$(value).attr("position",line_number + "_f_right");
 					$(value).prop("checked", false);
+					$(value).attr("name","will_get");
 					$(move_div_class).appendTo("#final_table tbody tr:last td:last-child");
 				}
 			})
