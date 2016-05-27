@@ -6,4 +6,3 @@ What I must do...
 * Live chat with admin
 * User page
 * Simple page direct
-* Status API Training Shop Blog About
