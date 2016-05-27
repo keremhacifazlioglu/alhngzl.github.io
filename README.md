@@ -1,6 +1,6 @@
 2016 Hibernate Web Project
 
-What I must do...
+What I must do
 
 * Cart finish, input c.card no and minus number of product
 * Live chat with admin
